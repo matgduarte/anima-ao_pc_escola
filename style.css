@@ -1,0 +1,226 @@
+#con{
+  padding-left: 10%;
+  padding-right: 10%;
+}
+  body {
+    font-size: 100%;
+    font-family: Arial, helvetica, sans-serif;
+  }
+  .wrapper {
+    text-align: center;
+  }
+  #dejahome{
+    height: 250px;
+  }
+  .wrapper h1 {
+    font-size: 280%;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .wrapper p {
+    font-size: 150%;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .btn-groups-jogo{
+    text-align: center;
+    margin-top: 10%;
+    position:absolute;
+    width: 80%;
+    bottom: 3%;
+    max-width: 800px;
+    margin: 0px 10%;
+  }
+  .btn-groups a, .btn-groups-jogo a{
+    text-decoration: none;
+    text-align: center;
+  }
+.btn-groups {
+    text-align: center;
+    margin-top: 10%;
+    position:absolute;
+    width: 32%;
+    bottom: 3%;
+    max-width: 600px;
+    margin-left: 25%;
+  }
+  
+  .btn-red-tr{
+    min-width: 130px;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 15px;
+    margin: 30px 2px;
+    font-size: 140%;
+    font-weight: 600;
+    color: #ecf0f1;
+    transition: 0.5s;
+    background-color: #e74c3c;
+  }
+  
+ 
+  .btn-red-tr:before {
+    position: absolute;
+    content: "";
+    border-top: 5px solid #ea6153;
+    border-left: 5px solid #ea6153;
+    border-right: 5px solid #e43725;
+    border-bottom: 5px solid #e43725;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    transition: 0.5s;
+  }
+  .btn-red-tr:hover {
+    box-shadow: 7px 7px #a82315, -7px -7px #f29f97;
+    cursor: pointer;
+  }
+  .btn-red-tr:hover::before {
+    border: 0px;
+  }
+  #i1{
+    float: left;
+    margin-top: 50px;
+    margin-left: 10px;
+    max-height: 350px;
+    min-height: 200px;
+    max-width: 350px;
+    padding: 0 0;
+  }
+  #i2{
+    float: right;
+    margin-top: 50px;
+    margin-right: 10px;
+    max-height: 350px;
+    min-height: 200px;
+    max-width: 350px;
+    padding: 0 0;
+  }
+  #fmont{
+    background-image: url(img/mont.png);
+    background-position:center 10%;
+    background-size:cover;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+  }
+#zzz{
+  position: absolute;
+  z-index: 100;
+  display: inline;
+  height: 90px;
+  margin-top: 100px;
+  margin-left: 200px;
+  animation: zzz 5s 1s infinite;
+}
+@keyframes zzz {
+  to {
+    margin-top: 0px;
+  margin-left: 300px;
+  }
+}
+#zzz2{
+  position: absolute;
+  z-index: 100;
+  display: inline;
+  height: 90px;
+  margin-top: 100px;
+  margin-left: 400px;
+  animation: zzz2 5s 1s infinite;
+}
+@keyframes zzz2 {
+  to {
+    margin-top: 0px;
+  margin-left: 500px;
+  }
+}
+#cama{
+  margin-top: 65px;
+}
+#animpe{
+  padding-left: 41%;
+  padding-right: 41%;
+}
+#pe{
+  width: 22%;
+    animation-name: pedra;
+    animation-duration: 1.9s;
+    transform: translateY(100px);
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+    z-index: 100;
+}
+@keyframes pedra {
+  to {
+    transform: translateY(530px);
+  }
+}
+#dmont{
+  bottom: 12px;
+  position: absolute;
+  width: 7%;
+  animation: deja 1.4s 0.2s 1;
+  height: 400px;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+  left: 46%;
+  filter: brightness(150%); 
+}
+@keyframes deja {
+  to {
+    height: 20px;
+  }
+}
+#reind{
+  float: left;
+}
+#rein{
+  animation: rein 4s infinite;
+  height: 20px;
+}
+@keyframes rein {
+  0% {
+		transform: rotate(0);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+#pjare{
+  background-color: rgba(255, 255, 255, 0.432);
+  display: inline;
+}
+#gua{
+  float:right;
+  animation: gua 5s  infinite;
+  filter: hue-rotate(0);
+  height: 300px;
+}
+@keyframes gua {
+  to{
+    filter: hue-rotate(-360deg);
+    display: inline;
+  }
+}
+#jarertx{
+  float:right;
+  width: 300px;
+}
+#animgua{
+  padding-right: 35%;
+}
+#im{
+  max-height: 350px;
+    min-height: 200px;
+    max-width: 350px;
+    padding: 0 0;
+}
